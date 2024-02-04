@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shift&#39;s Blog</title>
+    <link>/</link>
+    <description>Recent content on shift&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 05 May 2022 00:18:23 +0800</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>/posts/acm/blog/</link>
+      <pubDate>Thu, 05 May 2022 00:18:23 +0800</pubDate>
+      <guid>/posts/acm/blog/</guid>
+      <description>hello $$ \frac{a_i^{j}}{n} $$</description>
+    </item>
+    <item>
+      <title>🤝友链</title>
+      <link>/links/</link>
+      <pubDate>Sat, 06 Nov 2021 15:15:53 +0800</pubDate>
+      <guid>/links/</guid>
+      <description>&amp;lt; friend name=&amp;ldquo;Sulv&amp;rsquo;s Blog&amp;rdquo; url=&amp;ldquo;https://www.sulvblog.cn&amp;rdquo; logo=&amp;ldquo;https://www.sulvblog.cn/img/Q.gif&amp;quot; word=&amp;ldquo;一个记录技术、阅读、生活的博客&amp;rdquo; &amp;gt; 👉友链格式 名称： Sulv&amp;rsquo;s Blog 网址： https://www.sulvblog.cn 图标： https://www.sulvblog.cn/img/Q.gif 描述： 一个记录技术、阅读、生活的博客 👉友链申请要求 秉承互换友链原则、文章定期更新、不能有太多广告、个人描述字数控制在15字内 👉Hugo博客交流群 787018782</description>
+    </item>
+    <item>
+      <title>🙋🏻‍♂️关于</title>
+      <link>/about/</link>
+      <pubDate>Sat, 06 Nov 2021 14:57:28 +0800</pubDate>
+      <guid>/about/</guid>
+      <description>关于我 名字: shift 职业: 学生 爱好: 不知道</description>
+    </item>
+  </channel>
+</rss>
