@@ -8,7 +8,19 @@
     <loc>/posts/acm/</loc>
     <lastmod>2024-02-05T12:14:11+08:00</lastmod>
   </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2024-02-05T12:14:11+08:00</lastmod>
+  </url><url>
     <loc>/</loc>
+    <lastmod>2024-02-05T12:14:11+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-02-05T12:14:11+08:00</lastmod>
+  </url><url>
+    <loc>/categories/%E7%89%9B%E5%AE%A2/</loc>
+    <lastmod>2024-02-05T12:14:11+08:00</lastmod>
+  </url><url>
+    <loc>/tags/%E7%89%9B%E5%AE%A2round/</loc>
     <lastmod>2024-02-05T12:14:11+08:00</lastmod>
   </url><url>
     <loc>/posts/acm/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9Bround31/</loc>
@@ -23,9 +35,6 @@
     <loc>/posts/acm/blog/</loc>
     <lastmod>2022-05-05T00:18:23+08:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2022-05-05T00:18:23+08:00</lastmod>
-  </url><url>
     <loc>/links/</loc>
     <lastmod>2021-11-06T15:15:53+08:00</lastmod>
   </url><url>
@@ -35,8 +44,6 @@
     <loc>/archives/</loc>
   </url><url>
     <loc>/search/</loc>
-  </url><url>
-    <loc>/categories/</loc>
   </url><url>
     <loc>/series/</loc>
   </url>
