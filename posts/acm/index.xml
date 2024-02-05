@@ -13,7 +13,7 @@
       <link>/posts/acm/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9Bround31/</link>
       <pubDate>Mon, 05 Feb 2024 12:14:11 +0800</pubDate>
       <guid>/posts/acm/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9Bround31/</guid>
-      <description>#牛客周赛Round31</description>
+      <description>牛客周赛Round31 A.小红小紫替换 判断即可 $code:$ void solve() { std::string s; std::cin &amp;gt;&amp;gt; s; std::cout &amp;lt;&amp;lt; (s == &amp;#34;kou&amp;#34; ? &amp;#34;yukari&amp;#34; : s) &amp;lt;&amp;lt; &amp;#39;\n&amp;#39;; } B.小红的因子数 看到数据范围为 $1e13$，$\sqrt{1e13} \approx 3e6$ 所以直接枚举根号以内的素因子即可 复杂度 $O(\sqrt{n})$ $code:$ void solve() { i64 x; std::cin &amp;gt;&amp;gt; x; int ans = 0; for(int i = 2; i &amp;lt;= x / i; i ++ ) { if(x % i == 0) { while(x % i == 0) { x /=</description>
     </item>
     <item>
       <title>组合数学</title>
