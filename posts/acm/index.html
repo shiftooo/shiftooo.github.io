@@ -205,6 +205,18 @@ code.has-jax {
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Educational Codeforces Round 161 (Rated for Div. 2) A-E
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A. Tricky Template 我们对每个位置 $i$ 来看,只要 $a_i == c_i \ or \ b_i == c_i$​ ,那么就会使其不成立, 如果是整个字符串呢，那么就是，那么就需要每个位置都成立才能使其不成立，于是遍历判断一下即可 $code:$ void solve() { int n; std::cin &gt;&gt; n; std::string a, b, c; std::cin &gt;&gt; a &gt;&gt; b &gt;&gt; c; int ok = 0; for(int i = 0; i &lt; n; i &#43;&#43; ) { if(a[i] != c[i] &amp;&amp; b[i] != c[i]) { ok = 1; } } std::cout &lt;&lt; (ok ? &#34;YES&#34; : &#34;NO&#34;)...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-06 10:07:37 +0800 CST'>2024-02-06</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;shift</footer>
+  <a class="entry-link" aria-label="post link to Educational Codeforces Round 161 (Rated for Div. 2) A-E" href="/posts/acm/educational-codeforces-round-161-rated-for-div.-2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">牛客周赛Round31
     </h2>
   </header>
@@ -221,7 +233,7 @@ code.has-jax {
     </h2>
   </header>
   <div class="entry-content">
-    <p>组合数学 排列与组合 1.帕斯卡公式 $$ 对于所有满足 1\le k \le n-1的整数 n 和 k,有 \newline \tbinom{n}{k} = \tbinom{n - 1}{k} &#43; \tbinom{n - 1}{k - 1} $$</p>
+    <p>组合数学 排列与组合 1.帕斯卡公式 $$ 对于所有满足 1\le k \le n-1的整数 n 和 k,有 \newline \tbinom{n}{k} = \tbinom{n - 1}{k} &#43; \tbinom{n - 1}{k - 1} $$ 2.定理 $$ 1. 设多重集合S，有k种类型对象，每一种类型的有限出现次数时n_1,n_2,…,n_k,设S的大小为 n, S的排列数为 \newline \frac{n!}{n_1!n_2!…n_k!} \newline 2.设S为有k种类型的多重集合,每种元...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-04 23:26:13 +0800 CST'>2024-02-04</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;shift</footer>
   <a class="entry-link" aria-label="post link to 组合数学" href="/posts/acm/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"></a>
