@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codeforces on shift&#39;s Blog</title>
+    <link>/tags/codeforces/</link>
+    <description>Recent content in Codeforces on shift&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 06 Feb 2024 10:07:37 +0800</lastBuildDate>
+    <atom:link href="/tags/codeforces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Educational Codeforces Round 161 (Rated for Div. 2) A-E</title>
+      <link>/posts/acm/educational-codeforces-round-161-rated-for-div.-2/</link>
+      <pubDate>Tue, 06 Feb 2024 10:07:37 +0800</pubDate>
+      <guid>/posts/acm/educational-codeforces-round-161-rated-for-div.-2/</guid>
+      <description>A. Tricky Template 我们对每个位置 $i$ 来看,只要 $a_i == c_i \ or \ b_i == c_i$​ ,那么就会使其不成立, 如果是整个字符串呢，那么就是，那么就需要每个位置都成立才能使其不成立，于是遍历判断一下即可 $code:$ void solve() { int n; std::cin &amp;gt;&amp;gt; n; std::string a, b, c; std::cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b &amp;gt;&amp;gt; c; int ok = 0; for(int i = 0; i &amp;lt; n; i ++ ) { if(a[i] != c[i] &amp;amp;&amp;amp; b[i] != c[i]) { ok = 1; } } std::cout &amp;lt;&amp;lt; (ok ? &amp;#34;YES&amp;#34; : &amp;#34;NO&amp;#34;)</description>
+    </item>
+  </channel>
+</rss>

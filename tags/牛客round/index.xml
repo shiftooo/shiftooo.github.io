@@ -6,8 +6,15 @@
     <description>Recent content in 牛客Round on shift&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 05 Feb 2024 12:14:11 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Feb 2024 11:45:24 +0800</lastBuildDate>
     <atom:link href="/tags/%E7%89%9B%E5%AE%A2round/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>牛客周赛Round32</title>
+      <link>/posts/acm/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9Bround32/</link>
+      <pubDate>Mon, 12 Feb 2024 11:45:24 +0800</pubDate>
+      <guid>/posts/acm/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9Bround32/</guid>
+      <description>A.小红的 01 背包 能装多少装多少就行 $code:$ void solve() { int v, x, y; std::cin &amp;gt;&amp;gt; v &amp;gt;&amp;gt; x &amp;gt;&amp;gt; y; std::cout &amp;lt;&amp;lt; v / x * y &amp;lt;&amp;lt; &amp;#39;\n&amp;#39;; } B.小红的 dfs 枚举每一行，然后对于第一行为 $dfs$ 的情况, 只存在第一列也为 $dfs$ 满足，其他行同理枚举一遍即可 void solve() { char g[3][3]; for(int i = 0; i &amp;lt; 3; i ++) { for(int j = 0; j &amp;lt; 3; j ++ ) { std::cin &amp;gt;&amp;gt; g[i][j]; } } int ans = 9, v = 0; if(g[0][0] != &amp;#39;d&amp;#39;) v ++; if(g[0][1] != &amp;#39;f&amp;#39;) v ++; if(g[0][2] !=</description>
+    </item>
     <item>
       <title>牛客周赛Round31</title>
       <link>/posts/acm/%E7%89%9B%E5%AE%A2%E5%91%A8%E8%B5%9Bround31/</link>
