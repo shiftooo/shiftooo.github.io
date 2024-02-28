@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Div3 on shift&#39;s Blog</title>
+    <link>/tags/div3/</link>
+    <description>Recent content in Div3 on shift&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 28 Feb 2024 12:45:36 +0800</lastBuildDate>
+    <atom:link href="/tags/div3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Codeforces</title>
+      <link>/posts/acm/codeforces-round-929-div.-3/</link>
+      <pubDate>Wed, 28 Feb 2024 12:45:36 +0800</pubDate>
+      <guid>/posts/acm/codeforces-round-929-div.-3/</guid>
+      <description>A. Turtle Puzzle: Rearrange and Negate 因为可以任意排列这个数组，并将一段区间内的数乘 $-1$，我们可以排序后把所有负数变为正数，即可 $code:$ void solve() { int n; std::cin &amp;gt;&amp;gt; n; int ans = 0; for(int i = 0, x; i &amp;lt; n; i ++ ) { std::cin &amp;gt;&amp;gt; x; ans += std::abs(x); } std::cout &amp;lt;&amp;lt; ans &amp;lt;&amp;lt; &amp;#39;\n&amp;#39;; } B. Turtle Math: Fast Three Task 分类讨论，$\sum_{i=1}^na_i\mod 3$ 等于 $0$ 的话不需要操作，等于 $1$ 就看有</description>
+    </item>
+  </channel>
+</rss>

@@ -6,8 +6,15 @@
     <description>Recent content in Codeforces on shift&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 06 Feb 2024 10:07:37 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2024 12:45:36 +0800</lastBuildDate>
     <atom:link href="/tags/codeforces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Codeforces</title>
+      <link>/posts/acm/codeforces-round-929-div.-3/</link>
+      <pubDate>Wed, 28 Feb 2024 12:45:36 +0800</pubDate>
+      <guid>/posts/acm/codeforces-round-929-div.-3/</guid>
+      <description>A. Turtle Puzzle: Rearrange and Negate 因为可以任意排列这个数组，并将一段区间内的数乘 $-1$，我们可以排序后把所有负数变为正数，即可 $code:$ void solve() { int n; std::cin &amp;gt;&amp;gt; n; int ans = 0; for(int i = 0, x; i &amp;lt; n; i ++ ) { std::cin &amp;gt;&amp;gt; x; ans += std::abs(x); } std::cout &amp;lt;&amp;lt; ans &amp;lt;&amp;lt; &amp;#39;\n&amp;#39;; } B. Turtle Math: Fast Three Task 分类讨论，$\sum_{i=1}^na_i\mod 3$ 等于 $0$ 的话不需要操作，等于 $1$ 就看有</description>
+    </item>
     <item>
       <title>Educational Codeforces Round 161 (Rated for Div. 2) A-E</title>
       <link>/posts/acm/educational-codeforces-round-161-rated-for-div.-2/</link>

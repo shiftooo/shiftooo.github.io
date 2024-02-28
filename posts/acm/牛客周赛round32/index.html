@@ -394,7 +394,7 @@ code.has-jax {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">solve</span>() {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">int</span> n, m;
 </span></span><span style="display:flex;"><span>	std<span style="color:#f92672">::</span>cin <span style="color:#f92672">&gt;&gt;</span> n <span style="color:#f92672">&gt;&gt;</span> m;
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span>std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">char</span><span style="color:#f92672">&gt;&gt;</span> g(n, std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">char</span><span style="color:#f92672">&gt;</span>(m));
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> n; i <span style="color:#f92672">++</span> ) {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;  j <span style="color:#f92672">&lt;</span> m; j <span style="color:#f92672">++</span> ) {
@@ -404,7 +404,7 @@ code.has-jax {
 </span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span>(g[i][j] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;d&#39;</span>) g[i][j] <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
 </span></span><span style="display:flex;"><span>		}
 </span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">auto</span> check <span style="color:#f92672">=</span> [<span style="color:#f92672">&amp;</span>](<span style="color:#66d9ef">const</span> std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&amp;</span>o) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">bool</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;</span> n; i <span style="color:#f92672">++</span> ) {
 </span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span>(o[i] <span style="color:#f92672">==</span> o[i <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]) {
@@ -486,6 +486,11 @@ code.has-jax {
       <li><a href="/tags/%E7%89%9B%E5%AE%A2round/">牛客Round</a></li>
     </ul>
 <nav class="paginav">
+  <a class="prev" href="/posts/acm/codeforces-round-929-div.-3/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>Codeforces</span>
+  </a>
   <a class="next" href="/posts/acm/educational-codeforces-round-161-rated-for-div.-2/">
     <span class="title">下一页 »</span>
     <br>
