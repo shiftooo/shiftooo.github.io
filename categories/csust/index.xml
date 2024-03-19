@@ -13,7 +13,7 @@
       <link>/posts/acm/1/</link>
       <pubDate>Tue, 19 Mar 2024 22:40:39 +0800</pubDate>
       <guid>/posts/acm/1/</guid>
-      <description>CSUST ACMore Evening training 2024.3.19 Problem1 我们可以推一下这个式子就可以发现题目要我们求啥，题目要去掉俩个数后算术平均数相等，那我们就选俩个去掉假设为 $a_x, a_y$ $$ \frac{Sum}{n} &amp;amp;=&amp;amp; \frac{Sum - a_x-a_y}{n - 2} \ 得到： 2 \times Sum &amp;amp;=&amp;amp; (a_x + a_y) \times n $$ 我们会发现如果 $2 \times Sum \equiv 0 (\bmod n)$ 才可能存在有解，然后就是需要存在 $(a_x+a_y) = \frac{2\times Sum}{n}$ ，令 $w = \frac{2\times Sum}{n}$，假设 $x \textless y$ 要求的就</description>
+      <description>CSUST ACMore Evening training 2024.3.19 Problem1 我们可以推一下这个式子就可以发现题目要我们求啥，目要去掉俩个数后算术平均数相等，那我们就选俩个去掉假设为 $a_x, a_y$ $\frac{Sum}{n} = \frac{Sum - a_x-a_y}{n - 2}$ $得到： 2 \times Sum = (a_x + a_y) \times n $ 我们会发现如果 $2 \times Sum \equiv 0 (\bmod n)$ 才可能存在有解，然后就是需要存在 $(a_x+a_y) = \frac{2\times Sum}{n}$ ，令 $w = \frac{2\times Sum}{n}$，假设 $x &amp;lt; y$ 要求的就是对</description>
     </item>
   </channel>
 </rss>
