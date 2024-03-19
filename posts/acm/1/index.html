@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>CSUST ACMore Evening training 2024.3.19 | shift&#39;s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="CSUST ACMore Evening training 2024.3.19 Problem1 我们可以推一下这个式子就可以发现题目要我们求啥，题目要去掉俩个数后算术平均数相等，那我们就选俩个去掉假设为 $a_x, a_y$ $$ \frac{Sum}{n} &amp;=&amp; \frac{Sum - a_x-a_y}{n - 2} \ 得到： 2 \times Sum &amp;=&amp; (a_x &#43; a_y) \times n $$ 我们会发现如果 $2 \times Sum \equiv 0 (\bmod n)$ 才可能存在有解，然后就是需要存在 $(a_x&#43;a_y) = \frac{2\times Sum}{n}$ ，令 $w = \frac{2\times Sum}{n}$，假设 $x \textless y$ 要求的就">
+<meta name="author" content="shift">
+<link rel="canonical" href="/posts/acm/1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="img/Q.gif">
+<link rel="icon" type="image/png" sizes="16x16" href="img/Q.gif">
+<link rel="icon" type="image/png" sizes="32x32" href="img/Q.gif">
+<link rel="apple-touch-icon" href="img/Q.gif">
+<link rel="mask-icon" href="img/Q.gif">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style><meta property="og:title" content="CSUST ACMore Evening training 2024.3.19" />
+<meta property="og:description" content="CSUST ACMore Evening training 2024.3.19 Problem1 我们可以推一下这个式子就可以发现题目要我们求啥，题目要去掉俩个数后算术平均数相等，那我们就选俩个去掉假设为 $a_x, a_y$ $$ \frac{Sum}{n} &amp;=&amp; \frac{Sum - a_x-a_y}{n - 2} \ 得到： 2 \times Sum &amp;=&amp; (a_x &#43; a_y) \times n $$ 我们会发现如果 $2 \times Sum \equiv 0 (\bmod n)$ 才可能存在有解，然后就是需要存在 $(a_x&#43;a_y) = \frac{2\times Sum}{n}$ ，令 $w = \frac{2\times Sum}{n}$，假设 $x \textless y$ 要求的就" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/acm/1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-19T22:40:39+08:00" />
+<meta property="article:modified_time" content="2024-03-19T22:40:39+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CSUST ACMore Evening training 2024.3.19"/>
+<meta name="twitter:description" content="CSUST ACMore Evening training 2024.3.19 Problem1 我们可以推一下这个式子就可以发现题目要我们求啥，题目要去掉俩个数后算术平均数相等，那我们就选俩个去掉假设为 $a_x, a_y$ $$ \frac{Sum}{n} &amp;=&amp; \frac{Sum - a_x-a_y}{n - 2} \ 得到： 2 \times Sum &amp;=&amp; (a_x &#43; a_y) \times n $$ 我们会发现如果 $2 \times Sum \equiv 0 (\bmod n)$ 才可能存在有解，然后就是需要存在 $(a_x&#43;a_y) = \frac{2\times Sum}{n}$ ，令 $w = \frac{2\times Sum}{n}$，假设 $x \textless y$ 要求的就"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "CSUST ACMore Evening training 2024.3.19",
+      "item": "/posts/acm/1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "CSUST ACMore Evening training 2024.3.19",
+  "name": "CSUST ACMore Evening training 2024.3.19",
+  "description": "CSUST ACMore Evening training 2024.3.19 Problem1 我们可以推一下这个式子就可以发现题目要我们求啥，题目要去掉俩个数后算术平均数相等，那我们就选俩个去掉假设为 $a_x, a_y$ $$ \\frac{Sum}{n} \u0026amp;=\u0026amp; \\frac{Sum - a_x-a_y}{n - 2} \\ 得到： 2 \\times Sum \u0026amp;=\u0026amp; (a_x + a_y) \\times n $$ 我们会发现如果 $2 \\times Sum \\equiv 0 (\\bmod n)$ 才可能存在有解，然后就是需要存在 $(a_x+a_y) = \\frac{2\\times Sum}{n}$ ，令 $w = \\frac{2\\times Sum}{n}$，假设 $x \\textless y$ 要求的就",
+  "keywords": [
+    ""
+  ],
+  "articleBody": "CSUST ACMore Evening training 2024.3.19 Problem1 我们可以推一下这个式子就可以发现题目要我们求啥，题目要去掉俩个数后算术平均数相等，那我们就选俩个去掉假设为 $a_x, a_y$ $$ \\frac{Sum}{n} \u0026=\u0026 \\frac{Sum - a_x-a_y}{n - 2} \\ 得到： 2 \\times Sum \u0026=\u0026 (a_x + a_y) \\times n $$ 我们会发现如果 $2 \\times Sum \\equiv 0 (\\bmod n)$ 才可能存在有解，然后就是需要存在 $(a_x+a_y) = \\frac{2\\times Sum}{n}$ ，令 $w = \\frac{2\\times Sum}{n}$，假设 $x \\textless y$ 要求的就是对于每一个 $y$ 有多少个 $x$ 满足 $x \\textless y 且 a_x = w - a_y$ 我们发现只要从前往后按顺序遍历，再求一下之前有多少个 $w - a_y$ 即可，可以用个 $map$ 记录，直接遍历就好\nProblem2 给定一个字符串 $s$ 以及一个字符 $c$ 需要进行一些操作，将这个字符串所有位置变成这个字符，每一次操作是选择一个值 $x$ 把所有不是 $x$ 倍数的位置修改成 $c$ ，我们可以分类讨论一下\n首先是 $0$ 次，如果 $s$ 每一位都是 $c$ 那么修改次数显然是 $0$ 次\n然后是 $1$ 次，我们可以枚举 $1 \\sim n$ 每个数 $i$ 的倍数，然后如果对于 $i$ 的倍数位置，不存在与 $c$ 不相同的位置，那么我们就可以选择这个数，然后一次修改完毕，复杂度参考 埃氏筛 ，大致为 $O(nloglogn)$ 时间是够的\n然后就是剩下的全部可以 $2$ 次操作完，细想一下，我们怎么构造，其实只需要 $n$ 和 $n - 1$ 这俩个数即可，因为 $n$ 的倍数是它自己，其他位置都可以修改，然后 $2 * (n-1) \\textgreater n$ 是显然的（题目保证 $n \\ge 3$ ）那么就做完了\nProblem3 模拟删点的过程即可，每个点最多被删一次，每次删的点是度为 $1$ 的点，然后我们做类似与拓扑排序的一个过程，每次删掉一层，把这些删掉的点，连接的另外一些点的度减掉，如果度变成一了就放入，不过需要暂时存下来，因为每次是删一层，然后注意一下边界情况的特判就行了\nProblem4 按照题意模拟即可，首先能删除的是 $1$ 个节点，接下来是 $2, 4, 8, 16$ ，对于每一步是 $2^{i-1}$，直到达到 $2^{i-1} \\ge q$ ，对于$2^{i-1} \\textless q$ 只需要每次加上$1$ 即可，到 $2^{i-1}\\ge q$ 时我们发现，只要一层一层删，我们每次都能删掉 $q$ 个节点，剩下的节点个数为 $x$，那么还需要操作 $\\lceil \\frac{x}{q} \\rceil$ 次，这样就欧拉\n",
+  "wordCount" : "760",
+  "inLanguage": "zh",
+  "datePublished": "2024-03-19T22:40:39+08:00",
+  "dateModified": "2024-03-19T22:40:39+08:00",
+  "author":[{
+    "@type": "Person",
+    "name": "shift"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/acm/1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "shift's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img/Q.gif"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="" accesskey="h" title="shift&#39;s Blog (Alt + H)">
+                <img src="img/a.jpg" alt="" aria-label="logo"
+                    height="35">shift&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
+                    <span>🔍搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="/" title="🏠主页">
+                    <span>🏠主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="posts" title="📚文章">
+                    <span>📚文章</span>
+                </a>
+            </li>
+            <li>
+                <a href="archives/" title="⏱时间轴">
+                    <span>⏱时间轴</span>
+                </a>
+            </li>
+            <li>
+                <a href="tags" title="🔖标签">
+                    <span>🔖标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="about" title="🙋🏻‍♂️关于">
+                    <span>🙋🏻‍♂️关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="">主页</a></div>
+    <h1 class="post-title entry-hint-parent">
+      CSUST ACMore Evening training 2024.3.19
+    </h1>
+    <div class="post-meta"><span title='2024-03-19 22:40:39 +0800 CST'>2024-03-19</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;shift
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#csust-acmore-evening-training-2024319" aria-label="CSUST ACMore Evening training 2024.3.19">CSUST ACMore Evening training 2024.3.19</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#problem1" aria-label="Problem1">Problem1</a></li>
+                <li>
+                    <a href="#problem2" aria-label="Problem2">Problem2</a></li>
+                <li>
+                    <a href="#problem3" aria-label="Problem3">Problem3</a></li>
+                <li>
+                    <a href="#problem4" aria-label="Problem4">Problem4</a>
+                </li>
+            </ul>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="csust-acmore-evening-training-2024319">CSUST ACMore Evening training 2024.3.19<a hidden class="anchor" aria-hidden="true" href="#csust-acmore-evening-training-2024319">#</a></h1>
+<h3 id="problem1">Problem1<a hidden class="anchor" aria-hidden="true" href="#problem1">#</a></h3>
+<p>我们可以推一下这个式子就可以发现题目要我们求啥，题目要去掉俩个数后算术平均数相等，那我们就选俩个去掉假设为 $a_x, a_y$
+$$
+\frac{Sum}{n} &amp;=&amp; \frac{Sum - a_x-a_y}{n - 2} \
+得到： 2 \times Sum  &amp;=&amp;  (a_x + a_y) \times n
+$$
+我们会发现如果 $2 \times Sum \equiv 0 (\bmod n)$ 才可能存在有解，然后就是需要存在 $(a_x+a_y) = \frac{2\times Sum}{n}$ ，令 $w = \frac{2\times Sum}{n}$，假设 $x \textless  y$  要求的就是对于每一个 $y$ 有多少个 $x$ 满足 $x \textless y 且 a_x = w - a_y$ 我们发现只要从前往后按顺序遍历，再求一下之前有多少个 $w - a_y$ 即可，可以用个 $map$ 记录，直接遍历就好</p>
+<h3 id="problem2">Problem2<a hidden class="anchor" aria-hidden="true" href="#problem2">#</a></h3>
+<p>给定一个字符串 $s$ 以及一个字符 $c$ 需要进行一些操作，将这个字符串所有位置变成这个字符，每一次操作是选择一个值 $x$ 把所有不是 $x$ 倍数的位置修改成 $c$ ，我们可以分类讨论一下</p>
+<p>首先是 $0$ 次，如果 $s$ 每一位都是  $c$ 那么修改次数显然是  $0$ 次</p>
+<p>然后是 $1$ 次，我们可以枚举 $1 \sim n$ 每个数 $i$ 的倍数，然后如果对于 $i$ 的倍数位置，不存在与 $c$ 不相同的位置，那么我们就可以选择这个数，然后一次修改完毕，复杂度参考 <strong>埃氏筛</strong> ，大致为 $O(nloglogn)$ 时间是够的</p>
+<p>然后就是剩下的全部可以 $2$ 次操作完，细想一下，我们怎么构造，其实只需要 $n$ 和 $n - 1$ 这俩个数即可，因为 $n$ 的倍数是它自己，其他位置都可以修改，然后 $2 * (n-1) \textgreater  n$ 是显然的（题目保证 $n \ge 3$ ）那么就做完了</p>
+<h3 id="problem3">Problem3<a hidden class="anchor" aria-hidden="true" href="#problem3">#</a></h3>
+<p>模拟删点的过程即可，每个点最多被删一次，每次删的点是度为 $1$ 的点，然后我们做类似与拓扑排序的一个过程，每次删掉一层，把这些删掉的点，连接的另外一些点的度减掉，如果度变成一了就放入，不过需要暂时存下来，因为每次是删一层，然后注意一下边界情况的特判就行了</p>
+<h3 id="problem4">Problem4<a hidden class="anchor" aria-hidden="true" href="#problem4">#</a></h3>
+<p>按照题意模拟即可，首先能删除的是 $1$ 个节点，接下来是 $2, 4, 8, 16$ ，对于每一步是 $2^{i-1}$，直到达到 $2^{i-1} \ge q$ ，对于$2^{i-1} \textless q$ 只需要每次加上$1$ 即可，到 $2^{i-1}\ge q$ 时我们发现，只要一层一层删，我们每次都能删掉 $q$  个节点，剩下的节点个数为 $x$，那么还需要操作 $\lceil \frac{x}{q} \rceil$ 次，这样就欧拉</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="/posts/acm/codeforces-round-929-div.-3/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>Codeforces Round 929 (Div. 3)</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="">shift&#39;s Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
